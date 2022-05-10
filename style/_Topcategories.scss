@@ -1,0 +1,44 @@
+.TopCategories {
+    h2 {
+        text-align: center;
+        @include topic;
+        margin: 50px 0;
+    }
+    .productlist {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1140px;
+        flex-wrap: wrap;
+        margin: auto;
+        .fproduct {
+            .fp {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 260px;
+                height: 260px;
+                background: #F6F7FB;
+                border-radius: 50%;
+                &:hover {
+                    box-shadow: -9px 6px 0px #9877e7;
+                    transform: scale(1);
+                    transition: 1s;
+                }
+            }
+            .price {
+                text-align: center;
+                h5 {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    color: $offblue;
+                    margin: 15px 0;
+                }
+                span {
+                    color: $offblue;
+                }
+            }
+        }
+    }
+}

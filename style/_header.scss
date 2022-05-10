@@ -1,0 +1,92 @@
+    header {
+        background: $purple;
+    }
+    
+    .subnav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1140px;
+        margin: auto;
+        height: 50px;
+        color: #ffffff;
+        @include list;
+        .email {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            @include list;
+            p {
+                margin-right: 20px;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    
+    .shopping {
+        display: flex;
+        justify-content: space-between;
+        .drop {
+            ul {
+                padding: 15px;
+                display: flex;
+                li {
+                    margin-right: 30px;
+                }
+                a {
+                    color: #ffffff;
+                    font-size: 14px;
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mainHeader {
+        background: #ffffff;
+        padding: 20px 0;
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1140px;
+            margin: auto;
+            height: 60px;
+            h2 {
+                @include titleh2;
+            }
+            .link {
+                ul {
+                    display: flex;
+                    li {
+                        margin-right: 25px;
+                        @include navli;
+                    }
+                }
+            }
+            .search {
+                position: relative;
+                input {
+                    width: 317px;
+                    height: 40px;
+                    outline: none;
+                    border: 2px solid #E7E6EF;
+                }
+                i {
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    background: $pink;
+                    color: #ffffff;
+                    width: 46px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }

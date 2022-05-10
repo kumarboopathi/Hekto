@@ -1,0 +1,91 @@
+.latestProducts {
+    h2 {
+        text-align: center;
+        @include topic;
+        padding-top: 40px;
+    }
+    .productCategory {
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            @include arrival;
+            li {
+                margin-right: 30px;
+                a {
+                    &:hover {
+                        color: $pink;
+                    }
+                }
+            }
+        }
+    }
+    .latestList {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1140px;
+        flex-wrap: wrap;
+        margin: auto;
+        .lproduct {
+            margin-bottom: 70px;
+            .lp {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 360px;
+                height: 269px;
+                background: #F6F7FB;
+                position: relative;
+                .cart {
+                    position: absolute;
+                    left: 3px;
+                    bottom: 10px;
+                    display: none;
+                    i {
+                        display: block;
+                        padding: 9px;
+                        margin-bottom: 5px;
+                        background: #EEEFFB;
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+                        color: $blue;
+                    }
+                }
+                .sale {
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    display: none;
+                }
+            }
+            .price {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                .name {
+                    @include price;
+                }
+                .amount {
+                    @include price;
+                    span {
+                        &:nth-child(2) {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                transform: scale(1.1);
+                transition: 1s;
+                .lp {
+                    .cart {
+                        display: block;
+                    }
+                    .sale {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

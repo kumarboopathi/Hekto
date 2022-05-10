@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+$pink:#FB2E86;
+$white:#ffffff;
+$title: #0D0E43;
+$red:#FB2448;
+$offblue:#151875;
+$blue:#2F1AC4;
+$offnavi:#3F509E;
+$naviblue:#151875;
+$PantonePurple:#E0D3F5;
+$purple:#7E33E0;
+$offpurple:#9F63B5;
+$subtext:#8A8FB9;
+$liteblue: #1A0B5B;
+$backround:#F1F0FF;
+$product:linear-gradient(99.7deg,
+#1389FF 1.62%,
+#1DB4E7 99.19%),
+#29E870;
+$delivery:linear-gradient(99.7deg,
+#FA3BE5 1.62%,
+#FF28A0 99.19%),
+#29E870;
+$pricing:linear-gradient(99.7deg,
+#24D2FF 1.62%,
+#19A7F9 99.19%),
+#29E870;
+$support: linear-gradient(99.7deg,
+#36E6D5 1.62%,
+#27E862 99.19%),
+#29E870;
+@mixin titleh2 {
+    font-family: Josefin Sans;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+    color: $title;
+}
+
+@mixin topic {
+    font-family: Josefin Sans;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49px;
+    color: $liteblue;
+}
+
+@mixin p {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@mixin h2 {
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+@mixin list {
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+@mixin para {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+@mixin h3 {
+    font-family: Josefin Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+@mixin footerli {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+@mixin navli {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@mixin price {
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $offblue;
+}
+
+@mixin arrival {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@mixin support {
+    font-family: Josefin Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $offblue;
+}
+
+@mixin points {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.015em;
+}
+
+@mixin button {
+    font-family: Josefin Sans;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $white;
+}
+
+@mixin offer {
+    font-family: Josefin Sans;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 26px;
+    color: $offblue;
+}
+
+@mixin offprice {
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: $offblue;
+}
+
+@mixin discount {
+    font-family: Josefin Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.015em;
+    color: $offblue;
+}
+
+@mixin buttons {
+    background: #FB2E86;
+    color: #ffffff;
+    width: 157px;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+}

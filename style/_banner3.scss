@@ -1,0 +1,34 @@
+.banner3 {
+    padding: 100px 0;
+    .awads {
+        background: url(../image/banner3.png) center /cover no-repeat;
+        height: 462px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .update {
+        h2 {
+            @include topic;
+            width: 75%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        button {
+            background: #FB2E86;
+            color: #ffffff;
+            width: 157px;
+            height: 45px;
+            border: none;
+            border-radius: 3px;
+            @include button;
+        }
+    }
+    .image {
+        padding-top: 90px;
+        max-width: 1140px;
+        width: 904px;
+        margin: auto;
+    }
+}

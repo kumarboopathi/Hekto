@@ -1,0 +1,70 @@
+        footer {
+            background: #EEEFFB;
+            ;
+            .footerMain {
+                .footerSub {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 1140px;
+                    margin: auto;
+                    padding: 50px 0;
+                    .submit {
+                        h2 {
+                            @include titleh2;
+                        }
+                        h3 {
+                            @include h3;
+                            padding-bottom: 20px;
+                        }
+                        .search {
+                            margin: 30px 0;
+                            background: #ffffff;
+                            padding: 3px 3px 3px 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            input {
+                                border: none;
+                                outline: none;
+                            }
+                            button {
+                                @include buttons;
+                            }
+                        }
+                        span {
+                            @include footerli;
+                            color: $subtext;
+                        }
+                        p {
+                            @include footerli;
+                            color: $subtext;
+                        }
+                        ul {
+                            li {
+                                line-height: 40px;
+                                a {
+                                    @include footerli;
+                                    color: $subtext;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .copyRight {
+                display: flex;
+                max-width: 1140px;
+                margin: auto;
+                justify-content: space-between;
+                p {
+                    @include footerli;
+                    color: $subtext;
+                }
+                .social {
+                    i {
+                        // background: $offblue;
+                        // color: #ffffff;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }

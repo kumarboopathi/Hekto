@@ -1,0 +1,122 @@
+.TrendingProducts {
+    h2 {
+        text-align: center;
+        @include topic;
+        padding: 100px 0 40px 0;
+    }
+    .treanding {
+        .productList {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1140px;
+            flex-wrap: wrap;
+            margin: auto;
+            .fproduct {
+                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+                width: 240px;
+                position: relative;
+                .fp {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 240px;
+                    height: 240px;
+                    background: #F6F7FB;
+                }
+                .price {
+                    text-align: center;
+                    h5 {
+                        font-family: Lato;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        color: #FB2E86;
+                        margin: 15px 0;
+                    }
+                    .off {
+                        span {
+                            display: inline-block;
+                            margin-bottom: 20px;
+                            color: $offblue;
+                            &:nth-child(2) {
+                                font-family: Josefin Sans;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 12px;
+                                color: #1518754D;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+            }
+            .offer {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                .off {
+                    margin-right: 30px;
+                    width: 420px;
+                    height: 270px;
+                    background: #FFF6FB;
+                    box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+                    position: relative;
+                    img {
+                        position: absolute;
+                        right: 0px;
+                        bottom: 10px;
+                    }
+                }
+                .off1 {
+                    margin-right: 30px;
+                    width: 420px;
+                    height: 270px;
+                    background: #EEEFFB;
+                    box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
+                    position: relative;
+                    img {
+                        position: absolute;
+                        right: 10px;
+                        bottom: 30pxpx;
+                    }
+                }
+                .off,
+                .off1 {
+                    h3 {
+                        margin: 20px;
+                        @include offer;
+                    }
+                    a {
+                        border-bottom: 2px solid $pink;
+                        @include footerli;
+                        color: $pink;
+                        margin: 0 20px;
+                    }
+                }
+                .sale {
+                    width: 420px;
+                    height: 270px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .saleImg {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            width: 100px;
+                            height: 70px;
+                            margin-right: 20px;
+                            background-color: #F5F6F8;
+                        }
+                        .cost {
+                            p,
+                            span {
+                                @include offprice
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

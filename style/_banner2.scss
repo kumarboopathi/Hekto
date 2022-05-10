@@ -1,0 +1,52 @@
+    .banner2 {
+        background: $backround;
+        margin: 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content {
+            h2 {
+                @include topic;
+            }
+            ul {
+                li {
+                    color: #ACABC3;
+                    @include points;
+                    &::before {
+                        content: "•";
+                        color: $pink;
+                        margin: 10px;
+                    }
+                }
+            }
+            .add {
+                display: flex;
+                padding-top: 40px;
+                button {
+                    background: #FB2E86;
+                    color: #ffffff;
+                    width: 157px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    border-radius: 3px;
+                    @include button;
+                }
+                div {
+                    cursor: pointer;
+                    margin: 7px;
+                    padding-left: 15px;
+                    color: $offblue;
+                    p {
+                        font-family: Josefin Sans;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16px;
+                        letter-spacing: 0.02em;
+                    }
+                }
+            }
+        }
+    }

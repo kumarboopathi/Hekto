@@ -1,0 +1,117 @@
+.featuredProduct {
+    h2 {
+        text-align: center;
+        @include topic;
+        padding: 100px 0 40px 0;
+    }
+    .slide {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+        div {
+            margin: 7px;
+            height: 5px;
+            width: 14px;
+            background: #FB2E86;
+            border-radius: 10px;
+            &:hover {
+                transform: scale(1.7);
+                transition: .5s;
+            }
+        }
+    }
+    .productList {
+        max-width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .fproduct {
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+            width: 270px;
+            position: relative;
+            &:hover {
+                background: $liteblue;
+                transform: scale(1.1);
+                transition: 1s;
+                .price {
+                    h5 {
+                        color: #ffffff;
+                    }
+                    span {
+                        color: #ffffff;
+                    }
+                    p {
+                        color: #ffffff;
+                    }
+                }
+                .fp {
+                    .cart {
+                        display: block;
+                        color: $blue;
+                        i {
+                            padding: 7px;
+                            background: #EEEFFB;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+                        }
+                    }
+                }
+            }
+            .fp {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 270px;
+                height: 230px;
+                background: #F6F7FB;
+            }
+            .price {
+                text-align: center;
+                .line {
+                    display: flex;
+                    justify-content: center;
+                    margin: 10px 0;
+                    div {
+                        margin: 5px;
+                        height: 5px;
+                        width: 14px;
+                        background: #FB2E86;
+                        border-radius: 10px;
+                        &:nth-child(2) {
+                            background: #00009D;
+                        }
+                        &:nth-child(3) {
+                            background: #05E6B7;
+                        }
+                    }
+                }
+                h5 {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    color: #FB2E86;
+                    margin-top: 15px;
+                }
+                span {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    color: #151875;
+                }
+                p {
+                    color: #151875;
+                    padding-bottom: 10px;
+                }
+            }
+            .fp {
+                .cart {
+                    position: absolute;
+                    top: 8px;
+                    left: 20px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
