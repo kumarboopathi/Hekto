@@ -673,10 +673,11 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  width: 100%;
 }
 .TrendingProducts .treanding .productList .offer .off {
   margin-right: 30px;
-  width: 420px;
+  width: 33%;
   height: 270px;
   background: #FFF6FB;
   box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
@@ -689,7 +690,7 @@ header {
 }
 .TrendingProducts .treanding .productList .offer .off1 {
   margin-right: 30px;
-  width: 420px;
+  width: 33%;
   height: 270px;
   background: #EEEFFB;
   box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
@@ -720,7 +721,7 @@ header {
   margin: 0 20px;
 }
 .TrendingProducts .treanding .productList .offer .sale {
-  width: 420px;
+  width: 33%;
   height: 270px;
   display: flex;
   flex-direction: column;
