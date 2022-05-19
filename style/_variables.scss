@@ -15,6 +15,7 @@ $offpurple:#9F63B5;
 $subtext:#8A8FB9;
 $liteblue: #1A0B5B;
 $backround:#F1F0FF;
+$girdbanner:#F6F5FF;
 $product:linear-gradient(99.7deg,
 #1389FF 1.62%,
 #1DB4E7 99.19%),
@@ -167,4 +168,12 @@ $support: linear-gradient(99.7deg,
     height: 45px;
     border: none;
     border-radius: 3px;
+}
+
+@mixin gridh2 {
+    font-family: Josefin Sans;
+    font-size: 36px;
+    line-height: 42px;
+    color: #101750;
+    ;
 }

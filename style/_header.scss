@@ -1,5 +1,8 @@
     header {
         background: $purple;
+        @media only screen and(max-width: 1800px) {
+            width: 100%;
+        }
     }
     
     .subnav {
@@ -9,6 +12,7 @@
         margin: auto;
         height: 50px;
         color: #ffffff;
+        width: 100%;
         @include list;
         .email {
             display: flex;
@@ -31,17 +35,31 @@
             ul {
                 padding: 15px;
                 display: flex;
+                @media only screen and(max-width: 996px) {
+                    width: 100%;
+                    padding: 0px;
+                }
+                @media only screen and(max-width: 516px) {
+                    width: 100%;
+                }
                 li {
                     margin-right: 30px;
+                    @media only screen and(max-width: 996px) {
+                        margin-right: 0px;
+                    }
                 }
                 a {
                     color: #ffffff;
                     font-size: 14px;
                     i {
                         margin-left: 10px;
+                        @media only screen and(max-width: 996px) {}
                     }
                 }
             }
+        }
+        @media only screen and(max-width :1140px) {
+            width: 100%;
         }
     }
     
@@ -54,38 +72,58 @@
             align-items: center;
             max-width: 1140px;
             margin: auto;
-            height: 60px;
+            width: 100%;
+            .hamburger {
+                display: none;
+                @media only screen and(max-width: 900px) {
+                    display: block;
+                    color: #000000;
+                    cursor: pointer;
+                }
+            }
+            @media only screen and(max-width: 1140px) {
+                display: block;
+            }
             h2 {
                 @include titleh2;
+                flex-basis: 20%;
             }
             .link {
+                display: flex;
+                justify-content: space-between;
+                flex-basis: 75%;
+                @media only screen and(max-width: 996px) {
+                    display: block;
+                }
                 ul {
                     display: flex;
+                    align-items: center;
                     li {
                         margin-right: 25px;
                         @include navli;
                     }
                 }
-            }
-            .search {
-                position: relative;
-                input {
+                .search {
                     width: 317px;
                     height: 40px;
-                    outline: none;
-                    border: 2px solid #E7E6EF;
-                }
-                i {
-                    position: absolute;
-                    top: 0px;
-                    right: 0px;
-                    background: $pink;
-                    color: #ffffff;
-                    width: 46px;
-                    height: 40px;
+                    background: #ffffff;
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    justify-content: space-between;
+                    border: 2px solid #E7E6EF;
+                    input {
+                        border: none;
+                        outline: none;
+                    }
+                    i {
+                        background: $pink;
+                        color: #ffffff;
+                        width: 50px;
+                        height: 37px;
+                        padding-top: 3px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
             }
         }

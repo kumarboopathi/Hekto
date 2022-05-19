@@ -4,6 +4,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media only screen and(max-width: 1165px) {
+            display: block;
+            width: 100%;
+        }
+        .bannerimg {
+            @media only screen and(max-width: 996px) {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+        }
         .content {
             h2 {
                 @include topic;

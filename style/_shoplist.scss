@@ -1,0 +1,86 @@
+.mainContainer {
+    .contianer {
+        display: flex;
+        padding-bottom: 30px;
+        max-width: 1140px;
+        margin: auto;
+        .shopImage {
+            img {
+                width: 100%;
+            }
+        }
+        .shopPrice {
+            padding: 30px 50px;
+            .productName {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                width: 55%;
+                h3 {
+                    font-family: Josefin Sans;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $offblue;
+                }
+                .raidus {
+                    display: flex;
+                    div {
+                        margin: 5px;
+                        height: 14px;
+                        width: 14px;
+                        background: #FB2E86;
+                        border-radius: 50px;
+                        &:nth-child(2) {
+                            background: #00009D;
+                        }
+                        &:nth-child(3) {
+                            background: #05E6B7;
+                        }
+                    }
+                }
+            }
+            .priceRating {
+                margin-bottom: 15px;
+                span {
+                    color: $offblue;
+                    font-family: Josefin Sans;
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+                .throw {
+                    color: $pink;
+                    text-decoration: line-through;
+                    margin-right: 30px;
+                }
+                a {
+                    color: #FFC416;
+                }
+            }
+            .feature {
+                margin-bottom: 20px;
+                p {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 31px;
+                    color: #9295AA;
+                }
+            }
+            .favicon {
+                a {
+                    margin-right: 40px;
+                    color: #535399;
+                }
+            }
+        }
+    }
+    .image {
+        padding: 90px 0;
+        max-width: 1140px;
+        width: 100%;
+        margin: auto;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,5 +1,8 @@
 .banner3 {
     padding: 100px 0;
+    @media only screen and(max-width: 1165px) {
+        display: block;
+    }
     .awads {
         background: url(../image/banner3.png) center /cover no-repeat;
         height: 462px;
@@ -28,7 +31,10 @@
     .image {
         padding-top: 90px;
         max-width: 1140px;
-        width: 904px;
+        width: 100%;
         margin: auto;
+        @media only screen and(max-width: 1165px) {
+            display: none;
+        }
     }
 }

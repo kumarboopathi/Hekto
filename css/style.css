@@ -13,6 +13,11 @@
 header {
   background: #7E33E0;
 }
+@media only screen and (max-width: 1800px) {
+  header {
+    width: 100%;
+  }
+}
 
 .subnav {
   display: flex;
@@ -21,6 +26,7 @@ header {
   margin: auto;
   height: 50px;
   color: #ffffff;
+  width: 100%;
   font-family: Josefin Sans;
   font-size: 16px;
   font-weight: 600;
@@ -50,8 +56,24 @@ header {
   padding: 15px;
   display: flex;
 }
+@media only screen and (max-width: 996px) {
+  .shopping .drop ul {
+    width: 100%;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 516px) {
+  .shopping .drop ul {
+    width: 100%;
+  }
+}
 .shopping .drop ul li {
   margin-right: 30px;
+}
+@media only screen and (max-width: 996px) {
+  .shopping .drop ul li {
+    margin-right: 0px;
+  }
 }
 .shopping .drop ul a {
   color: #ffffff;
@@ -59,6 +81,11 @@ header {
 }
 .shopping .drop ul a i {
   margin-left: 10px;
+}
+@media only screen and (max-width: 1140px) {
+  .shopping {
+    width: 100%;
+  }
 }
 
 .mainHeader {
@@ -71,7 +98,22 @@ header {
   align-items: center;
   max-width: 1140px;
   margin: auto;
-  height: 60px;
+  width: 100%;
+}
+.mainHeader .navbar .hamburger {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .mainHeader .navbar .hamburger {
+    display: block;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .mainHeader .navbar {
+    display: block;
+  }
 }
 .mainHeader .navbar h2 {
   font-family: Josefin Sans;
@@ -79,9 +121,21 @@ header {
   font-weight: 700;
   line-height: 34px;
   color: #0D0E43;
+  flex-basis: 20%;
+}
+.mainHeader .navbar .link {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 75%;
+}
+@media only screen and (max-width: 996px) {
+  .mainHeader .navbar .link {
+    display: block;
+  }
 }
 .mainHeader .navbar .link ul {
   display: flex;
+  align-items: center;
 }
 .mainHeader .navbar .link ul li {
   margin-right: 25px;
@@ -90,23 +144,24 @@ header {
   font-weight: 400;
   line-height: 20px;
 }
-.mainHeader .navbar .search {
-  position: relative;
-}
-.mainHeader .navbar .search input {
+.mainHeader .navbar .link .search {
   width: 317px;
   height: 40px;
-  outline: none;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
   border: 2px solid #E7E6EF;
 }
-.mainHeader .navbar .search i {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+.mainHeader .navbar .link .search input {
+  border: none;
+  outline: none;
+}
+.mainHeader .navbar .link .search i {
   background: #FB2E86;
   color: #ffffff;
-  width: 46px;
-  height: 40px;
+  width: 50px;
+  height: 37px;
+  padding-top: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,6 +170,11 @@ header {
 header {
   background: #7E33E0;
 }
+@media only screen and (max-width: 1800px) {
+  header {
+    width: 100%;
+  }
+}
 
 .subnav {
   display: flex;
@@ -123,6 +183,7 @@ header {
   margin: auto;
   height: 50px;
   color: #ffffff;
+  width: 100%;
   font-family: Josefin Sans;
   font-size: 16px;
   font-weight: 600;
@@ -152,8 +213,24 @@ header {
   padding: 15px;
   display: flex;
 }
+@media only screen and (max-width: 996px) {
+  .shopping .drop ul {
+    width: 100%;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 516px) {
+  .shopping .drop ul {
+    width: 100%;
+  }
+}
 .shopping .drop ul li {
   margin-right: 30px;
+}
+@media only screen and (max-width: 996px) {
+  .shopping .drop ul li {
+    margin-right: 0px;
+  }
 }
 .shopping .drop ul a {
   color: #ffffff;
@@ -161,6 +238,11 @@ header {
 }
 .shopping .drop ul a i {
   margin-left: 10px;
+}
+@media only screen and (max-width: 1140px) {
+  .shopping {
+    width: 100%;
+  }
 }
 
 .mainHeader {
@@ -173,7 +255,22 @@ header {
   align-items: center;
   max-width: 1140px;
   margin: auto;
-  height: 60px;
+  width: 100%;
+}
+.mainHeader .navbar .hamburger {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .mainHeader .navbar .hamburger {
+    display: block;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .mainHeader .navbar {
+    display: block;
+  }
 }
 .mainHeader .navbar h2 {
   font-family: Josefin Sans;
@@ -181,9 +278,21 @@ header {
   font-weight: 700;
   line-height: 34px;
   color: #0D0E43;
+  flex-basis: 20%;
+}
+.mainHeader .navbar .link {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 75%;
+}
+@media only screen and (max-width: 996px) {
+  .mainHeader .navbar .link {
+    display: block;
+  }
 }
 .mainHeader .navbar .link ul {
   display: flex;
+  align-items: center;
 }
 .mainHeader .navbar .link ul li {
   margin-right: 25px;
@@ -192,23 +301,24 @@ header {
   font-weight: 400;
   line-height: 20px;
 }
-.mainHeader .navbar .search {
-  position: relative;
-}
-.mainHeader .navbar .search input {
+.mainHeader .navbar .link .search {
   width: 317px;
   height: 40px;
-  outline: none;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
   border: 2px solid #E7E6EF;
 }
-.mainHeader .navbar .search i {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+.mainHeader .navbar .link .search input {
+  border: none;
+  outline: none;
+}
+.mainHeader .navbar .link .search i {
   background: #FB2E86;
   color: #ffffff;
-  width: 46px;
-  height: 40px;
+  width: 50px;
+  height: 37px;
+  padding-top: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,6 +337,16 @@ header {
   max-width: 1140px;
   margin: auto;
   width: 100%;
+}
+@media only screen and (max-width: 1112px) {
+  .banner .content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .banner .content {
+    margin-right: 10px;
+  }
 }
 .banner .content span {
   font-family: Lato;
@@ -249,6 +369,12 @@ header {
   font-weight: 700;
   line-height: 28px;
   color: #8A8FB9;
+}
+@media only screen and (max-width: 1112px) {
+  .banner .content p {
+    text-align: center;
+    width: 100%;
+  }
 }
 .banner .content button {
   width: 200px;
@@ -277,11 +403,48 @@ header {
 .banner .homeImg img {
   width: 100%;
 }
+@media only screen and (max-width: 1440px) {
+  .banner .homeImg {
+    position: relative;
+    top: -250px;
+    left: 0px;
+    bottom: 10px;
+    animation: left 1s ease-in-out;
+  }
+  @keyframes left {
+    from {
+      top: 0px;
+      opacity: 0.1;
+    }
+    50% {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (max-width: 1184px) {
+  .banner .homeImg {
+    display: none;
+  }
+}
 .banner .chair {
   position: absolute;
   right: 100px;
   top: 10%;
+  width: 600px;
+  height: 600px;
   animation: right 4s ease-in-out;
+  width: 600px;
+  height: 600px;
+}
+@media only screen and (max-width: 1112px) {
+  .banner .chair {
+    display: none;
+    right: 330px;
+    top: 10%;
+    animation: none;
+    z-index: 3;
+  }
 }
 @keyframes right {
   from {
@@ -294,8 +457,25 @@ header {
   }
 }
 .banner .chair img {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+}
+@media only screen and (max-width: 1440px) {
+  .banner .chair {
+    position: relative;
+    top: 96px;
+    left: -7%;
+    animation: right 4s ease-in-out;
+  }
+  @keyframes right {
+    from {
+      right: -400px;
+      opacity: 0.5;
+    }
+    50% {
+      right: 100px;
+      opacity: 1;
+    }
+  }
 }
 
 .featuredProduct h2 {
@@ -328,17 +508,30 @@ header {
   max-width: 1140px;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+}
+@media only screen and (max-width: 1440px) {
+  .featuredProduct .productList {
+    flex-wrap: wrap;
+  }
 }
 .featuredProduct .productList .fproduct {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   width: 270px;
+  margin-bottom: 40px;
   position: relative;
+}
+.featuredProduct .productList .fproduct img {
+  transition: all 1s ease;
 }
 .featuredProduct .productList .fproduct:hover {
   background: #1A0B5B;
-  transform: scale(1.1);
   transition: 1s;
+}
+.featuredProduct .productList .fproduct:hover img {
+  transform: scale(1.1);
 }
 .featuredProduct .productList .fproduct:hover .price h5 {
   color: #ffffff;
@@ -443,8 +636,18 @@ header {
   flex-wrap: wrap;
   margin: auto;
 }
+@media only screen and (max-width: 996px) {
+  .latestProducts .latestList {
+    width: 100%;
+  }
+}
 .latestProducts .latestList .lproduct {
   margin-bottom: 70px;
+}
+@media only screen and (max-width: 996px) {
+  .latestProducts .latestList .lproduct {
+    flex-basis: 25%;
+  }
 }
 .latestProducts .latestList .lproduct .lp {
   display: flex;
@@ -524,6 +727,11 @@ header {
   max-width: 1140px;
   margin: auto;
 }
+@media only screen and (max-width: 1140px) {
+  .support .helpDesk {
+    display: block;
+  }
+}
 .support .helpDesk .help {
   width: 270px;
   height: 320px;
@@ -560,6 +768,20 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 1165px) {
+  .banner2 {
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .banner2 .bannerimg {
+    width: 100%;
+  }
+}
+.banner2 .bannerimg img {
+  width: 100%;
 }
 .banner2 .content h2 {
   font-family: Josefin Sans;
@@ -632,6 +854,16 @@ header {
   flex-wrap: wrap;
   margin: auto;
 }
+@media only screen and (max-width: 1165px) {
+  .TrendingProducts .treanding .productList {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .TrendingProducts .treanding .productList {
+    width: 100%;
+  }
+}
 .TrendingProducts .treanding .productList .fproduct {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   width: 240px;
@@ -644,6 +876,11 @@ header {
   width: 240px;
   height: 240px;
   background: #F6F7FB;
+}
+@media only screen and (max-width: 996px) {
+  .TrendingProducts .treanding .productList .fproduct .fp {
+    flex-basis: 25%;
+  }
 }
 .TrendingProducts .treanding .productList .fproduct .price {
   text-align: center;
@@ -675,6 +912,12 @@ header {
   margin-top: 50px;
   width: 100%;
 }
+@media only screen and (max-width: 996px) {
+  .TrendingProducts .treanding .productList .offer {
+    display: block;
+    width: 100%;
+  }
+}
 .TrendingProducts .treanding .productList .offer .off {
   margin-right: 30px;
   width: 33%;
@@ -682,6 +925,11 @@ header {
   background: #FFF6FB;
   box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
   position: relative;
+}
+@media only screen and (max-width: 996px) {
+  .TrendingProducts .treanding .productList .offer .off {
+    width: 100%;
+  }
 }
 .TrendingProducts .treanding .productList .offer .off img {
   position: absolute;
@@ -695,6 +943,11 @@ header {
   background: #EEEFFB;
   box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
   position: relative;
+}
+@media only screen and (max-width: 996px) {
+  .TrendingProducts .treanding .productList .offer .off1 {
+    width: 100%;
+  }
 }
 .TrendingProducts .treanding .productList .offer .off1 img {
   position: absolute;
@@ -726,6 +979,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media only screen and (max-width: 996px) {
+  .TrendingProducts .treanding .productList .offer .sale {
+    width: 100%;
+  }
 }
 .TrendingProducts .treanding .productList .offer .sale .saleImg {
   display: flex;
@@ -789,6 +1047,11 @@ header {
   margin: auto;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 996px) {
+  .discount .discountItems {
+    display: block;
+  }
 }
 .discount .discountItems .content {
   flex-basis: 70%;
@@ -859,6 +1122,11 @@ header {
 .discount .discountItems .bannerimg {
   width: 699px;
 }
+@media only screen and (max-width: 996px) {
+  .discount .discountItems .bannerimg {
+    width: 100%;
+  }
+}
 .discount .discountItems .bannerimg img {
   width: 100%;
 }
@@ -911,6 +1179,11 @@ header {
 .banner3 {
   padding: 100px 0;
 }
+@media only screen and (max-width: 1165px) {
+  .banner3 {
+    display: block;
+  }
+}
 .banner3 .awads {
   background: url(../image/banner3.png) center/cover no-repeat;
   height: 462px;
@@ -946,8 +1219,13 @@ header {
 .banner3 .image {
   padding-top: 90px;
   max-width: 1140px;
-  width: 904px;
+  width: 100%;
   margin: auto;
+}
+@media only screen and (max-width: 1165px) {
+  .banner3 .image {
+    display: none;
+  }
 }
 
 .blog {
@@ -967,12 +1245,25 @@ header {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+@media only screen and (max-width: 1165px) {
+  .blog .latestBlog {
+    display: block;
+  }
 }
 .blog .latestBlog .home {
-  width: 370px;
+  width: 33%;
   box-shadow: 0px 8px 40px rgba(49, 32, 138, 0.05);
 }
+@media only screen and (max-width: 1165px) {
+  .blog .latestBlog .home {
+    width: 100%;
+    margin: auto;
+  }
+}
 .blog .latestBlog .home .image img {
+  width: 100%;
   border-radius: 5px;
 }
 .blog .latestBlog .home .writer {
@@ -1027,6 +1318,228 @@ header {
   color: #FB2E86;
 }
 
+.menusection .menu {
+  background: #F6F5FF;
+  height: 286px;
+}
+@media only screen and (max-width: 900px) {
+  .menusection .menu {
+    text-align: center;
+  }
+}
+.menusection .menu .link {
+  max-width: 1140px;
+  margin: auto;
+  width: 100%;
+  padding: 100px 0px;
+}
+.menusection .menu .link h2 {
+  font-family: Josefin Sans;
+  font-size: 36px;
+  line-height: 42px;
+  color: #101750;
+  margin-bottom: 10px;
+}
+.menusection .menu ul {
+  display: flex;
+}
+@media only screen and (max-width: 900px) {
+  .menusection .menu ul {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.menusection .menu ul li a {
+  color: #000;
+  margin: 7px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.menusection .menu ul li a:hover {
+  color: #FB2E86;
+}
+.menusection .menu ul li a:last-child:active {
+  color: #FB2E86;
+}
+
+.filtersection {
+  max-width: 1140px;
+  margin: auto;
+}
+.filtersection .filter {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  padding: 100px 0;
+}
+@media only screen and (max-width: 900px) {
+  .filtersection .filter {
+    display: block;
+  }
+}
+.filtersection .filter .views {
+  width: 100%;
+}
+.filtersection .filter .views h3 {
+  font-family: Josefin Sans;
+  font-size: 22px;
+  line-height: 26px;
+  color: #2F1AC4;
+  width: 100%;
+}
+.filtersection .filter .views p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #8A8FB9;
+}
+.filtersection .filter .sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.filtersection .filter .sort .perPage {
+  color: #3F509E;
+}
+.filtersection .filter .sort .perPage input {
+  width: 55px;
+  height: 25px;
+  border: 1px solid #E7E6EF;
+  outline: none;
+}
+.filtersection .filter .sort .perPage select {
+  width: 96px;
+  height: 28px;
+  border: 1px solid #E7E6EF;
+  outline: none;
+}
+.filtersection .filter .sort .perPage select option {
+  color: #E7E6EF;
+}
+.filtersection .filter .sort .search input {
+  height: 20px;
+  width: 162px;
+  padding: 13px;
+  border: 1px solid #E7E6EF;
+  outline: none;
+}
+
+@media only screen and (max-width: 670px) {
+  .featuredProduct.gridPage .productList .fproduct {
+    display: block;
+    margin: 10px 50px;
+  }
+}
+.featuredProduct.gridPage .productList .fproduct:hover .price h5 {
+  color: #fff;
+}
+.featuredProduct.gridPage .productList .fproduct .price h5 {
+  color: #151875;
+}
+.featuredProduct.gridPage .productList .fproduct .price span:last-child {
+  color: #FB2E86;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.featuredProduct.gridPage .productList .fproduct .price .line div {
+  height: 14px;
+}
+.featuredProduct.gridPage .image {
+  padding-top: 90px;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+.featuredProduct.gridPage .image img {
+  width: 100%;
+}
+
+.mainContainer .contianer {
+  display: flex;
+  padding-bottom: 30px;
+  max-width: 1140px;
+  margin: auto;
+}
+.mainContainer .contianer .shopImage img {
+  width: 100%;
+}
+.mainContainer .contianer .shopPrice {
+  padding: 30px 50px;
+}
+.mainContainer .contianer .shopPrice .productName {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 55%;
+}
+.mainContainer .contianer .shopPrice .productName h3 {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  line-height: 23px;
+  color: #151875;
+}
+.mainContainer .contianer .shopPrice .productName .raidus {
+  display: flex;
+}
+.mainContainer .contianer .shopPrice .productName .raidus div {
+  margin: 5px;
+  height: 14px;
+  width: 14px;
+  background: #FB2E86;
+  border-radius: 50px;
+}
+.mainContainer .contianer .shopPrice .productName .raidus div:nth-child(2) {
+  background: #00009D;
+}
+.mainContainer .contianer .shopPrice .productName .raidus div:nth-child(3) {
+  background: #05E6B7;
+}
+.mainContainer .contianer .shopPrice .priceRating {
+  margin-bottom: 15px;
+}
+.mainContainer .contianer .shopPrice .priceRating span {
+  color: #151875;
+  font-family: Josefin Sans;
+  font-size: 15px;
+  line-height: 18px;
+}
+.mainContainer .contianer .shopPrice .priceRating .throw {
+  color: #FB2E86;
+  text-decoration: line-through;
+  margin-right: 30px;
+}
+.mainContainer .contianer .shopPrice .priceRating a {
+  color: #FFC416;
+}
+.mainContainer .contianer .shopPrice .feature {
+  margin-bottom: 20px;
+}
+.mainContainer .contianer .shopPrice .feature p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #9295AA;
+}
+.mainContainer .contianer .shopPrice .favicon a {
+  margin-right: 40px;
+  color: #535399;
+}
+.mainContainer .image {
+  padding: 90px 0;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+.mainContainer .image img {
+  width: 100%;
+}
+
 footer {
   background: #EEEFFB;
 }
@@ -1036,6 +1549,17 @@ footer .footerMain .footerSub {
   max-width: 1140px;
   margin: auto;
   padding: 50px 0;
+}
+@media only screen and (max-width: 996px) {
+  footer .footerMain .footerSub {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 996px) {
+  footer .footerMain .footerSub .submit {
+    margin-left: 30px;
+  }
 }
 footer .footerMain .footerSub .submit h2 {
   font-family: Josefin Sans;
@@ -1049,7 +1573,7 @@ footer .footerMain .footerSub .submit h3 {
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
-  padding-bottom: 20px;
+  padding-bottom: 20px 0;
 }
 footer .footerMain .footerSub .submit .search {
   margin: 30px 0;
@@ -1057,6 +1581,8 @@ footer .footerMain .footerSub .submit .search {
   padding: 3px 3px 3px 20px;
   display: flex;
   justify-content: space-between;
+  max-width: 377px;
+  margin: 10px auto;
 }
 footer .footerMain .footerSub .submit .search input {
   border: none;
@@ -1083,6 +1609,7 @@ footer .footerMain .footerSub .submit p {
   font-weight: 400;
   line-height: 19px;
   color: #8A8FB9;
+  padding-bottom: 30px;
 }
 footer .footerMain .footerSub .submit ul li {
   line-height: 40px;
